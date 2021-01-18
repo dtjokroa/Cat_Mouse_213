@@ -1,0 +1,18 @@
+# get Public:
+curl -i -H "Content-Type: application/json" \
+    -X GET localhost:8080/api/about
+
+# Add new Game:
+curl -i -H "Content-Type: application/json" -X POST localhost:8080/api/games
+
+# List all Games:
+curl -i -H "Content-Type: application/json" \
+    -X GET localhost:8080/games
+
+#Get one Game:
+curl -i -H "Content-Type: application/json" \
+    -X GET localhost:8080/games/4
+
+#Edit one Game:
+curl -i -H "Content-Type: application/json" \
+    -X GET localhost:8080/api/games/1/board/
